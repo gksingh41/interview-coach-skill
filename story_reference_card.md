@@ -16,7 +16,8 @@ Last updated: 2026-02-28
 | Metrics / trade-offs | S001, S002, S003 |
 | Stakeholder management | S003, S005 |
 | Product strategy / prioritization | S002, S005 |
-| Technical depth | S001, S003, S007 |
+| Technical depth | S008, S001, S003, S007 |
+| Trust & safety / working with data science / current work | S008 |
 
 ---
 
@@ -164,6 +165,40 @@ Last updated: 2026-02-28
 - "What would you do differently in your career?"
 - "Tell me about a time you worked with AI/ML or voice technology"
 - "Tell me about a time you set a clear success threshold upfront"
+
+---
+
+## S008 — Women-Preferred Bike Service: Captain Safety Engine (Current Work)
+
+**Earned Secret:** A 5-star captain with 4 rides isn't proven. Safety is about evidence, not averages — and the cut-off has to come from both the risk curve and the supply curve, not from a gut feel.
+
+**Deliver it like this:**
+> "Women were about 25% of our riders and it had plateaued. For many women who weren't using bike taxis, safety was the barrier. So we built a service that structurally delivers safety: every ride goes to a proven, top-quality captain.
+>
+> The core is a captain safety score. I defined the signals: ratings, especially from women, complaints, cancellations, verification, and in-trip signals like route deviation and SOS. Data science built it as a Bayesian model, because a captain with 5 stars over 4 rides isn't proven. We simulated how much evidence was enough, which came out at 12 rides minimum.
+>
+> Only the top ~30% of captains qualify. We picked that cut-off from two directions. Historically, the bad-ride rate stays flat up to about the top 30% and then rises. And below 30% of supply, riders simply wouldn't find a captain. Scores refresh daily, but a safety complaint removes a captain from the pool immediately. They keep earning on regular rides and re-qualify as their score recovers.
+>
+> The tradeoff is real: gross-to-net is around 45% versus 70% on regular bikes, and that's purely supply. We chose to protect the promise over the conversion number. A fallback to a regular captain would break the one thing the product exists for. We set expectations at booking, nudge unmatched riders to other services, and we can control the service's visibility on the fare screen when star supply is low.
+>
+> It's live in 5 cities. 60% of riders are women, riders saying they felt unsafe is about 8 points lower than on regular bikes, and repeat usage is 10% higher. That last one tells me the trust is real."
+
+**Key numbers:** 25% women baseline (plateaued) · top 25–30% captains · 12-ride minimum (simulation) · daily score refresh, instant removal on complaint · G2N ~45% vs 70% · 60% women riders · repeat users +10%, first-time users +1.5% vs regular bike · "felt unsafe" ~8 pts lower · 5 cities
+
+**My role vs. team:** I defined signals, the rider and captain journeys, and the tradeoffs (12-ride minimum, 30% cut-off). Data science built the model; data engineering built the daily pipeline and instant-removal trigger.
+
+**Open items (don't bluff on these):**
+- Why fare-screen visibility control isn't switched on yet
+- Exact "did you feel safe" numbers behind the 8-point gap
+- How many unmatched riders go on to book another service
+- Platform-wide women share movement (if unknown: "too early at platform level; repeat behaviour is the leading signal")
+
+**Use for questions like:**
+- "Walk me through something technical you built recently"
+- "Tell me about a tradeoff between user experience and business metrics"
+- "How do you work with data science / ML teams?"
+- "How do you define and measure success for a new product?"
+- "Tell me about a product where trust/safety was the core value"
 
 ---
 
