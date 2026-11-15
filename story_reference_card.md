@@ -14,7 +14,8 @@ Last updated: 2026-02-28
 | Internal tools / multiplying team output / platform | S005 |
 | Failure / wrong bet / learning / AI experience | S007 |
 | Metrics / trade-offs | S001, S002, S003 |
-| Stakeholder management | S003, S005 |
+| Stakeholder management | S003, S005, S009 |
+| Disagreement with engineering / technical constraints | S009 |
 | Product strategy / prioritization | S002, S005 |
 | Technical depth | S008, S001, S003, S007 |
 | Trust & safety / working with data science / current work | S008 |
@@ -199,6 +200,20 @@ Last updated: 2026-02-28
 - "How do you work with data science / ML teams?"
 - "How do you define and measure success for a new product?"
 - "Tell me about a product where trust/safety was the core value"
+
+---
+
+## S009 — Star Captain Program (Disagreement with Engineering)
+
+**Earned Secret:** When a team won't put a temporary change into a core system, don't fight it. Find the version of the test that doesn't need it, and let the result earn the permanent build.
+
+**Short version:** After launching the women's bike service, the star-captain promise ("more orders") was diluted: the service was ~15% of city orders, so ~1 order/day for a 10-ride captain. And with 60% women riders, "star order" risked signalling "woman rider". Proposal: label elite-customer orders as star orders too, plus a star badge, to test whether visible status improves captain behaviour on safety signals. Engineering refused a temporary change to core dispatch (no star property on the captain profile) and said it only relabelled orders. I agreed, reframed the goal as behaviour, and scoped v1 to captains who had never left the star pool, using a fixed list in an existing selector service, with dispatch tagging star orders. Result: orders flat (as engineering expected), star-order acceptance +0.5 pts vs star captains outside the test, and captain calls, the safety question, coverage and rating splits showed comprehension. That earned v2: a 3-tier safety segment from the Bayesian model in captain attributes, with nudges for the middle tier.
+
+**Confidentiality:** describe parts by function; no internal service or model names.
+
+**Open items:** engineers' real reason for no temporary change; which prior product validated labelling; size of the v1 dispatcher change; base rate and significance of +0.5 pts; why the pickup distance limit; what the middle-tier nudges are.
+
+**Use for:** disagreement with engineering · working within technical constraints · scrappy experiment → permanent build · second-order effects after launch.
 
 ---
 
