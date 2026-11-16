@@ -211,7 +211,9 @@ Last updated: 2026-02-28
 
 **Confidentiality:** describe parts by function; no internal service or model names.
 
-**Open items:** engineers' real reason for no temporary change; which prior product validated labelling; size of the v1 dispatcher change; base rate and significance of +0.5 pts; why the pickup distance limit; what the middle-tier nudges are.
+**Engineering's reason:** temporary changes in core dispatch become permanent, and there was little evidence the idea would work.
+
+**Open items:** which prior product validated labelling; size of the v1 dispatcher change; base rate and significance of +0.5 pts; why the pickup distance limit; what the middle-tier nudges are.
 
 **Use for:** disagreement with engineering · working within technical constraints · scrappy experiment → permanent build · second-order effects after launch.
 
