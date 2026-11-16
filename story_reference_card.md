@@ -12,7 +12,7 @@ Last updated: 2026-02-28
 | Cross-functional leadership / marketplace scaling | S003 |
 | 0→1 product / ambiguity / go-to-market | S004 |
 | Internal tools / multiplying team output / platform | S005 |
-| Failure / wrong bet / learning / AI experience | S007 |
+| Failure / wrong bet / learning / AI experience | S010, S007 |
 | Metrics / trade-offs | S001, S002, S003 |
 | Stakeholder management | S003, S005, S009 |
 | Disagreement with engineering / technical constraints | S009 |
@@ -216,6 +216,22 @@ Last updated: 2026-02-28
 **Open items:** which prior product validated labelling; size of the v1 dispatcher change; base rate and significance of +0.5 pts; why the pickup distance limit; what the middle-tier nudges are.
 
 **Use for:** disagreement with engineering · working within technical constraints · scrappy experiment → permanent build · second-order effects after launch.
+
+---
+
+## S010 — Go-to-Area Multiple Routes (Failure)
+
+**Earned Secret:** In a preference feature, the user's choice is the product. If we choose for them, even with good data, we get it wrong.
+
+**Short version:** Go-to-area lets captains pick a destination and get orders heading that way. Captains complained they got few orders. I took the complaint literally and matched orders against all of Google's alternative routes, not just the best one (data already in the fare-estimate API response, so cheap to build and run). Gross go-to-area orders rose significantly, but the acceptance rate fell, completed rides didn't improve, and feature usage and captain online days didn't move. Reason: detours. Captains have one habitual route home and ignore orders off it. The extra orders also diluted the on-route ones that had been working. We didn't scale it. The right fix, letting captains pick their route, was parked because it would make the feature harder to explain and build.
+
+**My mistake:** I solved the complaint, not the problem, and skipped checking captain behaviour because the experiment was cheap.
+
+**Lesson applied:** candidates are S002 (choice plus recommendation; confirm it came after), S009 (same "not enough orders" complaint, handled differently), S008 (quality over volume). Go-to-area came before S008 and S009.
+
+**Open items:** rough numbers (gross rise, acceptance fall); timing of S002.
+
+**Use for:** failure · acting on user feedback · experiments · preference/personalisation features.
 
 ---
 
