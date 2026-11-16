@@ -227,9 +227,9 @@ Last updated: 2026-02-28
 
 **My mistake:** I solved the complaint, not the problem, and skipped checking captain behaviour because the experiment was cheap.
 
-**Lesson applied:** candidates are S002 (choice plus recommendation; confirm it came after), S009 (same "not enough orders" complaint, handled differently), S008 (quality over volume). Go-to-area came before S008 and S009.
+**Lesson applied:** S002 (choice plus recommendation; assumed to come after go-to-area, verify). Backups: S009 (same "not enough orders" complaint, handled differently), S008 (quality over volume). Go-to-area came before S008 and S009.
 
-**Open items:** rough numbers (gross rise, acceptance fall); timing of S002.
+**Open items:** rough numbers (gross rise, acceptance fall); verify S002 came after go-to-area.
 
 **Use for:** failure · acting on user feedback · experiments · preference/personalisation features.
 
